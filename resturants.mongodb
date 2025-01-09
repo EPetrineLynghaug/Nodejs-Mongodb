@@ -1,2 +1,5 @@
 use("sample_restaurants");
-db.restaurants.find();
+db.restaurants.findOne({
+  borough: "Manhattan",
+  cuisine: "Italian",
+});
